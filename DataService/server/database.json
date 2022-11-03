@@ -1,0 +1,43 @@
+{
+  "posts": [
+    {
+      "title": "Awesome",
+      "content": "Yeah",
+      "tags": [
+        "tag1",
+        "tag2"
+      ],
+      "id": 1
+    },
+    {
+      "title": "This is cool",
+      "content": "Me aburro",
+      "tags": [
+        "tag2",
+        "tag3"
+      ],
+      "id": 2
+    },
+    {
+      "title": "Just for right now",
+      "content": "Do it, just do it!",
+      "tags": [
+        "tag1"
+      ],
+      "id": 3
+    },
+    {
+      "title": "No way",
+      "content": "No tags!",
+      "tags": [],
+      "id": 4
+    },
+    {
+      "title": "New",
+      "content": "My rting",
+      "rting": "1",
+      "tags": [],
+      "id": 5
+    }
+  ]
+}
