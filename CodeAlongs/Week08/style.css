@@ -1,14 +1,14 @@
 :root {
-    --red: #a41623;
-    --orange: #f85e00;
-    --yellow: #ffd29d;
-    --green: #918450;
+    --red: #ffffff;
+    --orange: #7a0000;
+    --yellow: #e4002b;
+    --green: #7b0000;
     --primary-color: var(--red);
     --secondary-color: var(--yellow);
     --accent1-color: var(--orange);
     --accent2-color: var(--green);
   }
-  
+  cfe4ff
   * {
     box-sizing: border-box;
   }
@@ -17,22 +17,22 @@
   }
   
   body {
-    background-color: whitesmoke;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f2f2f2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
   }
-  h1,
   h2,
   h3,
   h4 {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    color: var(--primary-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--secondary-color);
   }
   header {
     background-color: var(--secondary-color);
     padding: 1em;
   }
   header h1 {
+    color: var(--primary-color);
     max-width: 1080px;
     margin: 0 auto;
   }
