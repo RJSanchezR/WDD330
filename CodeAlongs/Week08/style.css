@@ -2,7 +2,7 @@
     --red: #ffffff;
     --orange: #7a0000;
     --yellow: #e4002b;
-    --green: #7b0000;
+    --green: #f2f2f2;
     --primary-color: var(--red);
     --secondary-color: var(--yellow);
     --accent1-color: var(--orange);
@@ -17,14 +17,14 @@
   }
   
   body {
-    background-color: #f2f2f2;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
   }
   h2,
   h3,
   h4 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'MetSerif', 'Times New Roman', Times, serif;
     color: var(--secondary-color);
   }
   header {
@@ -32,6 +32,8 @@
     padding: 1em;
   }
   header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
     color: var(--primary-color);
     max-width: 1080px;
     margin: 0 auto;
@@ -43,6 +45,7 @@
     margin: 1em auto;
     padding: 1em;
   }
+
   .loading {
     animation: blink 1s infinite;
   }
