@@ -73,14 +73,18 @@ export default class SwapiHelper {
         departmentNum = this.deptoId;
         this.arts = await this.makeRequest(baseUrl + "search?departmentId=" + departmentNum + "&q=*");
         let i = 0;
-        while (i < 4) {
+        while (i < 20) {
             // this.arts.objectIDs.map(async(i)=>{
             //     this.objeto = await this.makeRequest(baseUrl + "objects/" + i);
             //     this.objeto = this.objeto.primaryImageSmall;
             // });
-            this.objeto = await this.makeRequest(baseUrl + "objects/" + this.arts.objectIDs[1]);
-            this.objeto = this.objeto.primaryImageSmall;
-            console.log(this.objeto);
+            this.objeto = await this.makeRequest(baseUrl + "objects/" + this.arts.objectIDs[i]);
+            this.objeto.primaryImageSmall = this.objeto.primaryImageSmall;
+            this.objeto.title = this.objeto.title;
+            console.log(this.objeto.primaryImageSmall);
+            console.log(this.objeto.title);
+            const imgs = document.querySelector(".resultado");
+            imgs.innerHTML += `<div><img src="${this.objeto.primaryImageSmall}"><p>${this.objeto.title}<p></div>`;
             i++;
         }
         console.log(this.arts.objectIDs);

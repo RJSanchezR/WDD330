@@ -39,13 +39,16 @@
   main {
     /* background-color: white; */
     border: 1px solid var(--primary-color);
-    max-width: 1080px;
+    /* max-width: 1440px; */
     margin: 1em auto;
     padding: 1em;
-    min-height: 90vh;
   }
   .loading {
     animation: blink 1s infinite;
+  }
+
+  .resultado {
+    display: flex;
   }
   
   @keyframes blink {
@@ -102,13 +105,13 @@
   }
   
   @media screen and (min-width: 40em) {
-    main {
+    /* main {
       display: grid;
       grid-template-columns: 250px auto;
       gap: 1em;
     }
     .film-list {
       display: block;
-    }
+    } */
   }
   
